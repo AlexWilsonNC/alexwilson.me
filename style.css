@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --blue-pink: linear-gradient(to top left, rgb(18, 73, 255), rgb(178, 8, 230));
+    --purple-red: linear-gradient(to top left, rgb(139, 16, 255), rgb(255, 46, 31));
+    --lightblue-green: linear-gradient(to top left, rgb(16, 147, 255), rgb(7, 248, 127));
+}
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#nav-left {
+    float: left;
+    margin-left: 75px;
+}
+
+#nav-left img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+#nav-right {
+    float: right;
+    margin-right: 75px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#nav-right a {
+    margin-left: 20px;
+    background: var(--blue-pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#nav-right a:hover {
+    background: var(--purple-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* transform: scale(2); */
+}
+
+#first-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#first-slide img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.gradient-bg {
+    background-image: var(--blue-pink);
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#first-slide h1 {
+    font-size: 46px;
+    background: var(--purple-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0px 25px 0px;
+}
+
+#first-slide p {
+    font-size: 30px;
+    color: #fff;
+    margin: 5px 80px 5px 80px;
+}
+
+#technologies {
+    display: flex;
+    justify-content: center;
+}
+
+#technologies i {
+    font-size: 100px;
+    background: var(--lightblue-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+}
+
+#white-tech-box {
+    border-radius: 15px;
+    width: 60%;
+    height: 400px; /***********************************remove************************************************/
+    margin-top: -25px;
+    background-color: #fff;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#icon-names {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+#icon-names h2 {
+}
