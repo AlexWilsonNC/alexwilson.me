@@ -50,7 +50,7 @@ nav {
     background: var(--purple-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* transform: scale(2); */
+    transition: ease 0.3s;
 }
 
 #first-slide {
@@ -76,6 +76,16 @@ nav {
     align-items: center;
 }
 
+.gradient-bg:hover {
+    margin: -25px 0px 0px -25px;
+    box-shadow: 12px 12px 20px 12px rgba(0, 0, 0, 0.5);
+    transition: ease 0.3s;
+}
+
+.gradient-bg:hover ~ #technologies {
+    margin: 100px 0px 0px 0px;
+}
+
 #first-slide h1 {
     font-size: 46px;
     background: var(--purple-red);
@@ -91,11 +101,14 @@ nav {
 }
 
 #technologies {
+    margin-top: -25px;
     display: flex;
     justify-content: center;
 }
 
-#technologies i {
+.fa-globe,
+.fa-network-wired,
+.fa-laptop-code {
     font-size: 100px;
     background: var(--lightblue-green);
     -webkit-background-clip: text;
@@ -106,11 +119,15 @@ nav {
 #white-tech-box {
     border-radius: 15px;
     width: 65%;
-    height: 800px; /***********************************remove************************************************/
-    margin-top: -25px;
-    background-color: #fff;
+    background-color: black;
     display: flex;
     flex-direction: row;
+}
+
+#white-tech-box:hover {
+    margin: -40px -25px 0px 0px;
+    box-shadow: -12px 12px 20px 10px rgba(0, 0, 0, 0.4);
+    transition: ease 0.3s;
 }
 
 #left {
@@ -125,7 +142,6 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 33.33%;
-
 }
 
 #right {
@@ -133,7 +149,12 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 33.33%;
+}
 
+hr {
+    width: 65%;
+    margin-top: 20px;
+    border-top: 1px solid rgb(0, 98, 211);
 }
 
 #white-tech-box h2 {
@@ -143,6 +164,40 @@ nav {
 #white-tech-box p {
     text-align: center;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 25px;
     width: 280px;
+}
+
+#white-tech-box ul {
+    margin-top: 20px;
+}
+
+#white-tech-box li {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bold-list {
+    font-weight: 600;
+}
+
+.fa-circle,
+.fa-circle-notch {
+    font-size: 15px;
+    background: var(--lightblue-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+    #first-slide p {
+        font-size: 26.5px;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    #first-slide p {
+        font-size: 22px;
+    }
 }
