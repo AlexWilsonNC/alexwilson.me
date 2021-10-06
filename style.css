@@ -8,8 +8,8 @@
 
 :root {
     --blue-pink: linear-gradient(to top left, rgb(18, 73, 255), rgb(178, 8, 230));
-    --purple-red: linear-gradient(to top left, rgb(139, 16, 255), rgb(255, 46, 31));
-    --lightblue-green: linear-gradient(to top left, rgb(16, 147, 255), rgb(7, 248, 127));
+    --purple-red: linear-gradient(to top right, rgb(139, 16, 255), rgb(255, 46, 31));
+    --lightblue-green: linear-gradient(to top right, rgb(16, 147, 255), rgb(7, 248, 127));
 }
 
 nav {
@@ -105,22 +105,44 @@ nav {
 
 #white-tech-box {
     border-radius: 15px;
-    width: 60%;
-    height: 400px; /***********************************remove************************************************/
+    width: 65%;
+    height: 800px; /***********************************remove************************************************/
     margin-top: -25px;
     background-color: #fff;
-}
-
-#icons {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
-#icon-names {
+#left {
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
 }
 
-#icon-names h2 {
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+
+}
+
+#white-tech-box h2 {
+    margin-top: 20px;
+}
+
+#white-tech-box p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 280px;
 }
