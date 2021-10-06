@@ -10,15 +10,21 @@
     --blue-pink: linear-gradient(to top left, rgb(18, 73, 255), rgb(178, 8, 230));
     --purple-red: linear-gradient(to top right, rgb(139, 16, 255), rgb(255, 46, 31));
     --lightblue-green: linear-gradient(to top right, rgb(16, 147, 255), rgb(7, 248, 127));
+    --orange-yellow: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(255, 238, 0));
+    --orange-red: linear-gradient(to bottom right, rgb(255, 115, 0), rgb(255, 0, 0));
+    --pink-lightblue: linear-gradient(to top right, rgb(0, 203, 253), rgb(255, 73, 246));
+    --shadow-hover: rgba(0, 0, 0, 0.4);
 }
 
 nav {
     width: 100%;
-    background-color: #fff;
+    background-color: #fff; /*************add blur*********************/
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    /* position: sticky;
+    top: 0; */
 }
 
 #nav-left {
@@ -50,7 +56,7 @@ nav {
     background: var(--purple-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: ease 0.3s;
+    /* transition: ease 0.8s; */
 }
 
 #first-slide {
@@ -74,12 +80,12 @@ nav {
     text-align: center;
     display: flex;
     align-items: center;
+    transition: ease-in-out 0.3s;
 }
 
 .gradient-bg:hover {
     margin: -25px 0px 0px -25px;
-    box-shadow: 12px 12px 20px 12px rgba(0, 0, 0, 0.5);
-    transition: ease 0.3s;
+    box-shadow: 12px 12px 20px 12px var(--shadow-hover);
 }
 
 .gradient-bg:hover ~ #technologies {
@@ -119,15 +125,16 @@ nav {
 #white-tech-box {
     border-radius: 15px;
     width: 65%;
-    background-color: black;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
+    transition: ease-in-out 0.3s;
+    padding-bottom: 25px;
 }
 
 #white-tech-box:hover {
     margin: -40px -25px 0px 0px;
-    box-shadow: -12px 12px 20px 10px rgba(0, 0, 0, 0.4);
-    transition: ease 0.3s;
+    box-shadow: -12px 12px 20px 10px var(--shadow-hover);
 }
 
 #left {
@@ -188,6 +195,147 @@ hr {
     background: var(--lightblue-green);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#my-work {
+    margin-top: 75px;    
+}
+
+h3 {
+    font-size: 46px;
+    background: var(--purple-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0px 25px 0px;
+    text-align: center;
+}
+
+#work-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.work-card {
+    width: 360px;
+    height: 275px;
+    margin: 15px 15px 15px 15px;
+    border-radius: 15px;
+    transition: ease-in-out 0.3s;
+}
+
+.work-card:hover {
+    transform: scale(1.05);
+}
+
+.card1 {
+    background-image: var(--orange-red);
+}
+
+.card2 {
+    background-image: var(--pink-lightblue);
+}
+
+.card3 {
+    background-image: var(--blue-pink);
+}
+
+.card4 {
+    background-image: var(--lightblue-green);
+}
+
+.card5 {
+    background-image: var(--orange-yellow);
+}
+
+.card6 {
+    background-image: var(--purple-red);
+}
+
+#testimonials {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 46px;
+    background: var(--purple-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0px 25px 0px;
+    text-align: center;
+}
+
+#rahul {
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+#testimonials p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    width: 65%;
+    text-align: center;
+}
+
+#rahul-name {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#rahul-name span {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#resume-section {
+    margin-top: 100px;
+}
+
+h6 {
+    font-size: 46px;
+    background: var(--purple-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 15px 0px 40px 0px;
+    text-align: center;
+}
+
+#resume-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#resume-left {
+    width: 40%;
+    height: 400px;
+    background-color: blue;
+}
+
+#download-box {
+
+}
+
+#resume-right {
+    width: 60%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#resume-section img {
+    height: 1200px;
+    box-shadow: 10px 10px 15px 10px var(--shadow-hover);
 }
 
 @media screen and (max-width: 1400px) {
