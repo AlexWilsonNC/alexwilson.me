@@ -318,12 +318,38 @@ h6 {
 
 #resume-left {
     width: 40%;
-    height: 400px;
-    background-color: blue;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 
-#download-box {
+.download {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18.5px;
+}
 
+.pdf {
+    background-image: var(--pink-lightblue);
+}
+
+.doc {
+    background-image: var(--lightblue-green);
+}
+
+#gadget-svg {
+    z-index: -100;
+    width: 1000px;
+    margin-top: 100px;
+    opacity: 0.5;
 }
 
 #resume-right {
@@ -333,9 +359,46 @@ h6 {
     justify-content: center;
 }
 
-#resume-section img {
+#resume-right img {
     height: 1200px;
     box-shadow: 10px 10px 15px 10px var(--shadow-hover);
+    z-index: 10;
+}
+
+#footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 700px;
+}
+
+#small-footer {
+    width: 35%;
+    height: 100px;
+    z-index: 11;
+    background-color: rgb(39, 39, 39);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#small-footer p {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.fa-chevron-up {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 7.5px;
+}
+
+#big-footer {
+    width: 100%;
+    background-image: var(--blue-pink);
+    height: 300px;
 }
 
 @media screen and (max-width: 1400px) {
