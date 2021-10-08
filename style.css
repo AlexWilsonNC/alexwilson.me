@@ -16,15 +16,18 @@
     --shadow-hover: rgba(0, 0, 0, 0.4);
 }
 
-nav {
+body.dark {
+    background-color: black;
+}
+
+#nav {
     width: 100%;
-    background-color: #fff; /*************add blur*********************/
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    /* position: sticky;
-    top: 0; */
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 #nav-left {
@@ -32,11 +35,20 @@ nav {
     margin-left: 75px;
 }
 
-#nav-left img {
+#nav p {
+    font-size: 42px;
+    font-weight: 600;
+    background: var(--blue-pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* logo */
+/* #nav-left img {
     width: 90px;
     border-radius: 50%;
     transform: rotate(90deg);
-}
+} */
 
 #nav-right {
     float: right;
@@ -50,7 +62,6 @@ nav {
     background: var(--blue-pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 #nav-right a:hover {
@@ -58,6 +69,21 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* transition: ease 0.8s; */
+}
+
+#theme-switcher {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme-btn {
+    margin-right: 91.5px;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 28px;
+    padding: 7.5px 15px 7.5px 15px;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
 }
 
 #first-slide {
@@ -71,6 +97,7 @@ nav {
 #first-slide img {
     width: 150px;
     margin-bottom: 10px;
+    border-radius: 50%;
 }
 
 .gradient-bg {
@@ -90,10 +117,6 @@ nav {
     box-shadow: 12px 12px 20px 12px var(--shadow-hover);
 }
 
-/* .gradient-bg:hover ~ #technologies {
-    margin: 100px 0px 0px 0px;
-} */
-
 #first-slide h1 {
     font-size: 46px;
     background: var(--purple-red);
@@ -106,6 +129,23 @@ nav {
     font-size: 30px;
     color: #fff;
     margin: 5px 80px 5px 80px;
+}
+
+#up-arrow {
+    font-size: 50px;
+    background: var(--lightblue-green);
+    color: #fff;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 500;
+    border-radius: 50%;
+    padding: 0px 11px 1.5px 11px;
+    transition: ease-in-out 0.3s;
+}
+
+#up-arrow:hover {
+    background: var(--pink-lightblue);
 }
 
 #technologies {
@@ -242,7 +282,7 @@ h3 {
 
 .card1 {
     background-image: var(--orange-red);
-    z-index: 1;
+    z-index: -100;
 }
 
 .card1 img {
@@ -260,12 +300,18 @@ h3 {
 .card2 {
     background-image: var(--pink-lightblue);
     z-index: 10;
+    position: relative;
 }
 
 .card2 img {
     width: 350px;
     margin-top: -25px;
     opacity: 0.75;
+}
+
+.card2 p {
+    font-size: 40px;
+    margin: -300px 0px 0px 90px;
 }
 
 .card3 {
@@ -277,6 +323,12 @@ h3 {
     width: 300px;
     margin: -25px 0px 0px -45px;
     opacity: 0.5;
+}
+
+.card3 p {
+    font-size: 42px;
+    font-family: 'Share Tech', sans-serif;
+    margin: -70px 0px 0px 100px;
 }
 
 .card4 {
@@ -330,6 +382,15 @@ h3 {
     margin: -30px 0px 0px 135px;
 }
 
+.card6 p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
 #testimonials {
     margin-top: 50px;
     display: flex;
@@ -371,7 +432,7 @@ h4 {
 }
 
 #resume-section {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 h6 {
@@ -379,7 +440,7 @@ h6 {
     background: var(--purple-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 15px 0px 40px 0px;
+    margin: 15px 0px 50px 0px;
     text-align: center;
 }
 
@@ -419,12 +480,17 @@ h6 {
     background-image: var(--lightblue-green);
 }
 
-#gadget-svg {
+.gadget-svg {
     z-index: -100;
     width: 1000px;
     margin-top: 100px;
     opacity: 0.3;
+    position: relative;
 }
+
+/* .gadget-svg path {
+    filter: red;
+} */
 
 #resume-right {
     width: 60%;
@@ -456,6 +522,14 @@ h6 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    transition: ease 0.3s;
+}
+
+#small-footer:hover {
+    transform: translatey(-50px);
+    background-color: rgb(51, 51, 51);
+    box-shadow: 10px 20px 20px 10px var(--shadow-hover);
 }
 
 #small-footer p {
@@ -463,7 +537,7 @@ h6 {
     color: #fff;
 }
 
-.fa-chevron-up {
+#footer-up {
     font-size: 32px;
     color: #fff;
     margin-top: 7.5px;
@@ -472,7 +546,10 @@ h6 {
 #big-footer {
     width: 100%;
     background-image: var(--blue-pink);
-    height: 300px;
+    height: 250px;
+    position: relative;
+    margin-top: -50px;
+    z-index: 50;
 }
 
 @media screen and (max-width: 1400px) {

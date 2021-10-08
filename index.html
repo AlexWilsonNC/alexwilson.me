@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400&family=Fira+Sans:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@200;300;400&family=Press+Start+2P&family=Italiana&family=Share+Tech&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div id="nav-left">
-            <img src="assets/logo.png" alt="portfolio logo">
+            <!-- <img src="assets/logo.png" alt="portfolio logo"> -->
+            <p>Alexander Wilson</p>
         </div>
         <div id="nav-right">
-            <a id="active" href="index.html">Home</a>
+            <!-- <a id="active" href="index.html">Home</a> -->
             <a href="#my-work">Projects</a>
-            <a href="./pages/resume.html">Resume</a>
+            <a href="#resume-section">Resume</a>
         </div>
     </nav>
+
+    <div id="theme-switcher">
+        <button id="theme-btn">Dark Mode</button>
+    </div>
 
     <main>
         <div id="first-slide">
@@ -40,6 +43,8 @@
                     endless ideas.</p>
             </div>
         </div>
+
+        <a href="#" id="up-arrow"><i class="fas fa-chevron-up"></i></a>
 
         <div id="technologies">
             <div id="white-tech-box">
@@ -92,7 +97,7 @@
                         <li><span class="bold-list">Spanish</span> <i class="fas fa-circle"></i> <i
                                 class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i
                                 class="fas fa-circle-notch"></i> <i class="fas fa-circle-notch"></i></li>
-                        <li>"Avanzado"</li>
+                        <li>"Conversacional"</li>
                         <li><span class="bold-list">Japanese</span> <i class="fas fa-circle"></i> <i
                                 class="fas fa-circle"></i> <i class="fas fa-circle-notch"></i> <i
                                 class="fas fa-circle-notch"></i> <i class="fas fa-circle-notch"></i></li>
@@ -105,32 +110,44 @@
         <div id="my-work">
             <h3>Recent Projects</h3>
             <div id="work-container">
-                <a href="">
+                <a href="./pages/lux-rentals.html">
                     <div class="work-card card1">
                         <img src="assets/lambo-etch.png" alt="sketch of a lamborghini">
                         <p>Luxury Rentals</p>
                     </div>
                 </a>
-                <div class="work-card card2">
-                    <img src="assets/laptop.png" alt="sketch of a laptop">
-                </div>
-                <div class="work-card card3">
-                    <img src="assets/mouse.png" alt="sketch of a computer mouse">
-                </div>
+                <a href="./pages/e-comm.html">
+                    <div class="work-card card2">
+                        <img src="assets/laptop.png" alt="sketch of a laptop">
+                        <p>e-commerce back-end</p>
+                    </div>
+                </a>
+                <!-- <a href=""> -->
+                    <div class="work-card card3">
+                        <img src="assets/mouse.png" alt="sketch of a computer mouse">
+                        <p>React Portfolio</p>
+                    </div>
+                <!-- </a> -->
             </div>
             <div id="container-bottom">
-                <div class="work-card card4">
-                    <img src="assets/lashes.png" alt="sketch of eye with long lashes">
-                    <p>GirlCrush</p>
-                </div>
-                <div class="work-card card5">
-                    <img src="assets/pikachu.png" alt="sketch of pikachu">
-                    <p>Poké <span>Battle</span></p>
-                </div>
-                <div class="work-card card6">
-                    <img src="assets/weather.png" alt="sketch of sun behind clouds">
-                    <p>Weather API</p>
-                </div>
+                <a href="./pages/girlcrush.html">
+                    <div class="work-card card4">
+                        <img src="assets/lashes.png" alt="sketch of eye with long lashes">
+                        <p>GirlCrush</p>
+                    </div>
+                </a>
+                <a href="./pages/poke.html">
+                    <div class="work-card card5">
+                        <img src="assets/pikachu.png" alt="sketch of pikachu">
+                        <p>Poké <span>Battle</span></p>
+                    </div>
+                </a>
+                <a href="./pages/weather.html">
+                    <div class="work-card card6">
+                        <img src="assets/weather.png" alt="sketch of sun behind clouds">
+                        <p>Weather API</p>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -153,7 +170,7 @@
                     <div class="download doc">
                         <p>Download .docx</p>
                     </div>
-                    <img id="gadget-svg" src="assets/gadgets.svg" alt="gadget backdrop">
+                    <img class="gadget-svg" src="assets/gadgets.svg" alt="gadget backdrop">
                 </div>
                 <div id="resume-right">
                     <img src="assets/resume-screenshot.png" alt="resume document">
@@ -163,7 +180,7 @@
 
         <div id="footer-section">
             <div id="small-footer">
-                <i class="fas fa-chevron-up"></i>
+                <i id="footer-up" class="fas fa-chevron-up"></i>
                 <p>Cool site? I think so too, you know what to do from here...</p>
             </div>
             <div id="big-footer">
