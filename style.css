@@ -18,6 +18,7 @@
 
 body.dark {
     background-color: black;
+    transition: all ease-in-out 0.85s;
 }
 
 #nav {
@@ -28,6 +29,7 @@ body.dark {
     align-items: center;
     height: 100px;
     font-family: 'Montserrat Alternates', sans-serif;
+    transition: all ease-in-out 0.85s;
 }
 
 #nav-left {
@@ -84,6 +86,11 @@ body.dark {
     padding: 7.5px 15px 7.5px 15px;
     background-color: rgb(26, 26, 26);
     color: #fff;
+    transition: all ease-in-out 0.25s;
+}
+
+#theme-btn:hover {
+    cursor: pointer;
 }
 
 #first-slide {
@@ -451,7 +458,6 @@ h6 {
 
 #resume-left {
     width: 40%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -463,8 +469,6 @@ h6 {
     height: 150px;
     margin-bottom: 70px;
     display: flex;
-    /* flex-basis: 150px; */
-    flex: 1;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -530,6 +534,7 @@ h6 {
     transform: translatey(-50px);
     background-color: rgb(51, 51, 51);
     box-shadow: 10px 20px 20px 10px var(--shadow-hover);
+    cursor: pointer;
 }
 
 #small-footer p {
