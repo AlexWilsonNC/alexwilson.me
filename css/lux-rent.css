@@ -1,0 +1,19 @@
+#first-slide {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#first-slide-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#slide-left {
+    width: 35%;
+}
+
+#slide-right {
+    width: 65%;
+}

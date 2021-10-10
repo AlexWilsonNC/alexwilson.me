@@ -14,21 +14,31 @@
     --orange-red: linear-gradient(to bottom right, rgb(255, 115, 0), rgb(255, 0, 0));
     --pink-lightblue: linear-gradient(to top right, rgb(0, 203, 253), rgb(255, 73, 246));
     --shadow-hover: rgba(0, 0, 0, 0.4);
+    /* --light-hover: rgba(255, 255, 255, 0.1); */
+}
+
+body {
+    transition: all ease-in-out 0.65s;
 }
 
 body.dark {
     background-color: black;
-    transition: all ease-in-out 0.85s;
-}
-
-body.dark #nav {
-    background-color: black;
+    transition: all ease-in-out 0.65s;
 }
 
 body.dark #white-tech-box {
     background-color: rgb(22, 22, 22);
     color: #fff;
 }
+
+body.dark #white-tech-box:hover {
+    box-shadow: -12px 12px 20px 10px var(--light-hover);
+}
+
+body.dark .gradient-bg:hover {
+    box-shadow: 12px 12px 20px 12px var(--light-hover);
+}
+
 
 body.dark #testimonials {
     color: #fff;
@@ -48,19 +58,19 @@ body.dark #theme-btn {
     font-weight: 600;
 } */
 
-body.dark #first-slide img {
+body.dark #profile-img {
     content: url("assets/profile-vampire.jpg");
 }
 
 #nav {
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     font-family: 'Montserrat Alternates', sans-serif;
-    transition: all ease-in-out 0.85s;
+    transition: all ease-in-out 0.65s;
 }
 
 #nav-left {
@@ -69,11 +79,16 @@ body.dark #first-slide img {
 }
 
 #nav p {
-    font-size: 42px;
+    font-size: 38px;
     font-weight: 600;
     background: var(--blue-pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#nav span {
+    font-size: 62px;
+    font-weight: 400;
 }
 
 #nav-right {
@@ -85,16 +100,25 @@ body.dark #first-slide img {
 
 #nav-right a {
     margin-left: 20px;
+}
+
+#active {
+    background: var(--orange-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#inactive {
     background: var(--blue-pink);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#nav-right a:hover {
-    background: var(--purple-red);
+#inactive:hover {
+    background: var(--pink-lightblue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* transition: ease 0.8s; */
+    /* transition: ease 0.8s; */ /*******************************************/
 }
 
 #theme-switcher {
@@ -125,7 +149,7 @@ body.dark #first-slide img {
     margin-top: 25px;
 }
 
-#first-slide img {
+#profile-img {
     content: url("assets/profile.jpg");
     width: 150px;
     margin-bottom: 10px;
@@ -142,6 +166,10 @@ body.dark #first-slide img {
     align-items: center;
     transition: all ease-in-out 0.3s;
     position: relative;
+}
+
+.gradient-bg-lux-rent {
+    height: 215px;
 }
 
 .gradient-bg:hover {
@@ -173,7 +201,7 @@ body.dark #first-slide img {
     z-index: 500;
     border-radius: 50%;
     padding: 0px 11px 1.5px 11px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s; /*******************************************/
 }
 
 #up-arrow:hover {
@@ -243,6 +271,24 @@ hr {
 
 #white-tech-box h2 {
     margin-top: 20px;
+}
+
+#visit {
+    font-size: 26px;
+    background: var(--purple-red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#visit:hover {
+    background: var(--lightblue-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#visit-img {
+    width: 70%;
+    margin-top: 15px;
 }
 
 #white-tech-box p {
@@ -464,7 +510,7 @@ h4 {
 }
 
 #resume-section {
-    margin-top: 75px;
+    margin: 75px 0px 200px 0px;
 }
 
 h6 {
@@ -512,7 +558,6 @@ h6 {
 .gadget-svg {
     z-index: -100;
     width: 1000px;
-    margin-top: 100px;
     opacity: 0.3;
     position: relative;
 }
@@ -538,7 +583,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 700px;
+    margin-top: -400px;
 }
 
 #small-footer {
@@ -576,7 +621,7 @@ h6 {
 #big-footer {
     width: 100%;
     background-image: var(--blue-pink);
-    height: 250px;
+    height: 300px;
     position: relative;
     margin-top: -50px;
     z-index: 50;
