@@ -10,8 +10,8 @@
     --blue-pink: linear-gradient(to top left, rgb(18, 73, 255), rgb(178, 8, 230));
     --purple-red: linear-gradient(to top right, rgb(139, 16, 255), rgb(255, 46, 31));
     --lightblue-green: linear-gradient(to top right, rgb(16, 147, 255), rgb(7, 248, 127));
-    --orange-yellow: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(255, 238, 0));
-    --orange-red: linear-gradient(to bottom right, rgb(255, 115, 0), rgb(255, 0, 0));
+    --orange-yellow: linear-gradient(to bottom right, rgb(255, 94, 0), rgb(255, 238, 0));
+    --orange-red: linear-gradient(to bottom right, rgb(255, 136, 0), rgb(255, 0, 0));
     --pink-lightblue: linear-gradient(to top right, rgb(0, 203, 253), rgb(255, 73, 246));
     --shadow-hover: rgba(0, 0, 0, 0.4);
     /* --light-hover: rgba(255, 255, 255, 0.1); */
@@ -39,7 +39,6 @@ body.dark .gradient-bg:hover {
     box-shadow: 12px 12px 20px 12px var(--light-hover);
 }
 
-
 body.dark #testimonials {
     color: #fff;
 }
@@ -49,6 +48,11 @@ body.dark #up-arrow {
 }
 
 body.dark #theme-btn {
+    color: black;
+    background-color: #fff;
+}
+
+body.dark #theme-btn-space {
     color: black;
     background-color: #fff;
 }
@@ -126,7 +130,8 @@ body.dark #profile-img {
     justify-content: flex-end;
 }
 
-#theme-btn {
+#theme-btn,
+#theme-btn-space {
     margin-right: 91.5px;
     border-radius: 25px;
     border-style: none;
@@ -137,7 +142,8 @@ body.dark #profile-img {
     transition: all ease-in-out 0.25s;
 }
 
-#theme-btn:hover {
+#theme-btn:hover,
+#theme-btn-space:hover {
     cursor: pointer;
 }
 
@@ -188,20 +194,21 @@ body.dark #profile-img {
 }
 
 #up-arrow {
-    font-size: 50px;
+    font-size: 60px;
     background: var(--lightblue-green);
-    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: fixed;
     bottom: 35px;
     right: 35px;
     z-index: 500;
-    border-radius: 50%;
-    padding: 0px 11px 1.5px 11px;
     transition: ease-in-out 0.3s; /*******************************************/
 }
 
 #up-arrow:hover {
     background: var(--pink-lightblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #technologies {

@@ -1,0 +1,37 @@
+body.space {
+    background: url(../assets/space.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.space #first-slide h1 {
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.space .info p {
+    color: #fff;
+}
+
+body.space #white-tech-box {
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+}
+
+body.space #testimonials {
+    color: #fff;
+}
+
+body.space #theme-btn {
+    color: black;
+    background-color: #fff;
+}
+
+body.space #theme-btn-space {
+    color: black;
+    background-color: #fff;
+}
