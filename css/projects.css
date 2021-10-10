@@ -24,6 +24,7 @@ h1,
     width: 40%;
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 #slide-right {
@@ -39,8 +40,13 @@ h1,
 .info p {
     font-size: 24px;
     font-weight: 400;
-    color: black;
     line-height: 40px;
+}
+
+#slide-right p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 25px 100px 0px 100px;
 }
 
 body.dark #first-slide h1 {
@@ -50,6 +56,10 @@ body.dark #first-slide h1 {
 }
 
 body.dark .info p {
+    color: #fff;
+}
+
+body.dark #slide-right p {
     color: #fff;
 }
 
@@ -68,4 +78,12 @@ body.dark #theme-btn-space {
     z-index: -5;
     position: relative;
     opacity: 0.6;
+}
+
+#pika-img {
+    position: relative;
+    z-index: -5;
+    opacity: 0.25;
+    width: 500px;
+    margin: -500px 0px 0px -500px;
 }

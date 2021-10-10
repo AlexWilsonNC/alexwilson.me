@@ -1,21 +1,60 @@
-document.getElementById('theme-btn').addEventListener('click', function () {
-  if (document.body.classList == '') {
-    document.body.classList.add('dark')
-    document.getElementById('theme-btn').innerText = 'Light Mode';
-  } else {
-    document.body.classList.remove('dark')
-    document.getElementById('theme-btn').innerText = 'Dark Mode';
+let darkMode = localStorage.getItem('darkMode');
+let spaceMode = localStorage.getItem('spaceMode');
 
+const darkButton = document.getElementById('theme-btn');
+const spaceButton = document.getElementById('theme-btn-space')
+
+// DARK
+//////////////////////////////////////////////////////////////
+const enableDarkMode = () => {
+  document.body.classList.add('dark');
+  document.getElementById('theme-btn').innerText = 'Light Mode';
+  localStorage.setItem('darkMode', 'enabled');
+};
+
+const disableDarkMode = () => {
+  document.body.classList.remove('dark');
+  document.getElementById('theme-btn').innerText = 'Dark Mode';
+  localStorage.setItem('darkMode', null);
+};
+
+if(darkMode === 'enabled') {
+  enableDarkMode();
+}
+
+darkButton.addEventListener('click', () => {
+  darkMode = localStorage.getItem('darkMode');
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
   }
 });
 
-document.getElementById('theme-btn-space').addEventListener('click', function () {
-  if (document.body.classList == '') {
-    document.body.classList.add('space')
-    document.getElementById('theme-btn-space').innerText = 'Main Theme';
-  } else {
-    document.body.classList.remove('space')
-    document.getElementById('theme-btn-space').innerText = 'Outer Space';
+// SPACE
+////////////////////////////////////////////////////////////
 
+const enableSpaceMode = () => {
+  document.body.classList.add('space');
+  document.getElementById('theme-btn-space').innerText = 'Main Theme';
+  localStorage.setItem('spaceMode', 'enabled');
+};
+
+const disableSpaceMode = () => {
+  document.body.classList.remove('space');
+  document.getElementById('theme-btn-space').innerText = 'Outer Space';
+  localStorage.setItem('spaceMode', null);
+};
+
+if(spaceMode === 'enabled') {
+  enableSpaceMode();
+}
+
+spaceButton.addEventListener('click', () => {
+  spaceMode = localStorage.getItem('spaceMode');
+  if (spaceMode !== 'enabled') {
+    enableSpaceMode();
+  } else {
+    disableSpaceMode();
   }
 });

@@ -5,6 +5,7 @@ body.space {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 0.65s;
 }
 
 body.space #first-slide h1 {
