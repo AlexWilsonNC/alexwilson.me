@@ -156,6 +156,12 @@ body.dark #profile-img {
     border-radius: 50%;
 }
 
+.gradient-bg p {
+    font-size: 30px;
+    color: #fff;
+    margin: 5px 80px 5px 80px;
+}
+
 .gradient-bg {
     background-image: var(--blue-pink);
     width: 80%;
@@ -166,10 +172,6 @@ body.dark #profile-img {
     align-items: center;
     transition: all ease-in-out 0.3s;
     position: relative;
-}
-
-.gradient-bg-lux-rent {
-    height: 215px;
 }
 
 .gradient-bg:hover {
@@ -183,12 +185,6 @@ body.dark #profile-img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 15px 0px 25px 0px;
-}
-
-#first-slide p {
-    font-size: 30px;
-    color: #fff;
-    margin: 5px 80px 5px 80px;
 }
 
 #up-arrow {
@@ -274,14 +270,15 @@ hr {
 }
 
 #visit {
-    font-size: 26px;
+    font-size: 18px;
     background: var(--purple-red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
 #visit:hover {
-    background: var(--lightblue-green);
+    background: var(--pink-lightblue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
