@@ -34,7 +34,6 @@ darkButton.addEventListener('click', () => {
 
 // SPACE
 ////////////////////////////////////////////////////////////
-
 const enableSpaceMode = () => {
   document.body.classList.add('space');
   document.getElementById('theme-btn-space').innerText = 'Main Theme';
