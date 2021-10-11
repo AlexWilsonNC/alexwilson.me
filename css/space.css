@@ -37,3 +37,7 @@ body.space .gadget-svg {
     fill: #fff;
     z-index: 2;
 }
+
+body.space #slide-right p {
+    color: #fff;
+}
