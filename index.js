@@ -9,6 +9,7 @@ const spaceButton = document.getElementById('theme-btn-space')
 const enableDarkMode = () => {
   document.body.classList.add('dark');
   document.getElementById('theme-btn').innerText = 'Light Mode';
+  // document.getElementById('tryme').style.display = 'none';
   localStorage.setItem('darkMode', 'enabled');
 };
 
@@ -37,6 +38,7 @@ darkButton.addEventListener('click', () => {
 const enableSpaceMode = () => {
   document.body.classList.add('space');
   document.getElementById('theme-btn-space').innerText = 'Main Theme';
+  document.getElementById('tryme').style.display = 'none';
   localStorage.setItem('spaceMode', 'enabled');
 };
 

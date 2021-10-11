@@ -74,7 +74,8 @@ body.dark #profile-img {
     top: 0;
     right: 0;
     width: 15px;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background: linear-gradient(to top, /*#fcb045, #fd1d1d,*/#ffff58, #58f788, #355FE9, #a55ad8);
     z-index: 1000;
 }
@@ -691,16 +692,41 @@ body.dark .gadget-svg {
     html {
       scroll-behavior: smooth;
     }
-  }
+}
 
 @media screen and (max-width: 1400px) {
+    .gradient-bg {
+        width: 88%;
+    }
     #first-slide p {
         font-size: 26.5px;
+    }
+    #white-tech-box {
+        width: 75%;
+    }
+    #small-footer {
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 1185px) {
     #first-slide p {
         font-size: 22px;
+    }
+    .work-card {
+        width: 340px;
+        height: 260px;
+        margin: 14px 14px 14px 14px;
+    }
+    .card2 p {
+        font-size: 36px;
+        margin: -300px 0px 0px 90px;
+    }
+    .card3 p {
+        font-size: 36px;
+        margin: -70px 0px 0px 100px;
+    }
+    #big-footer p {
+        font-size: 36px;
     }
 }
