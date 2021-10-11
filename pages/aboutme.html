@@ -16,26 +16,29 @@
 </head>
 
 <body>
-    <nav id="nav">
-        <div id="nav-left">
-            <a href="../index.html">
-                <p><span>A</span>W</p>
-            </a>
-        </div>
-        <div id="nav-right">
-            <a id="inactive" href="../index.html">Home</a>
-            <a id="inactive" href="../index.html#my-work">Projects</a>
-            <a id="inactive" href="../index.html#resume-section">Resume</a>
-            <a id="active" href="#">About Me</a>
-        </div>
-    </nav>
+    <main>
+        <div id="progressbar"></div>
 
-    <div id="theme-switcher">
-        <button id="theme-btn-space">Outer Space</button>
-        <button id="theme-btn">Dark Mode</button>
-    </div>
+        <nav id="nav">
+            <div id="nav-left">
+                <a href="../index.html">
+                    <p><span>A</span>W</p>
+                </a>
+            </div>
+            <div id="nav-right">
+                <a id="inactive" href="../index.html">Home</a>
+                <a id="inactive" href="../index.html#my-work">Projects</a>
+                <a id="inactive" href="../index.html#resume-section">Resume</a>
+                <a id="active" href="#">About Me</a>
+            </div>
+        </nav>
 
-    <!-- <div id="footer-section">
+        <div id="theme-switcher">
+            <button id="theme-btn-space">Outer Space</button>
+            <button id="theme-btn">Dark Mode</button>
+        </div>
+
+        <!-- <div id="footer-section">
         <div id="small-footer">
             <i id="footer-up" class="fas fa-chevron-up"></i>
             <p>Cool site? I think so too, you know what to do from here...</p>
@@ -61,9 +64,24 @@
         </div>
     </div> -->
 
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="index.js"></script>
-
-</main>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop(),
+                    dh = $(document).height(),
+                    wh = $(window).height();
+                scrollPercent = (scroll / (dh - wh)) * 100;
+                $('#progressbar').css('height', scrollPercent + '%');
+            });
+            $('main').mousemove(function (e) {
+                const moveX = (e.pageX * -1 / 50);
+                const moveY = (e.pageY * -1 / 50);
+                $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+            })
+        </script>
+    </main>
 </body>
+
 </html>

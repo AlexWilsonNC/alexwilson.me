@@ -55,6 +55,12 @@ body.dark #first-slide h1 {
     -webkit-text-fill-color: transparent;
 }
 
+body.space #first-slide h1 {
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body.dark .info p {
     color: #fff;
 }
@@ -68,16 +74,12 @@ body.dark #theme-btn-space {
     background-color: #fff;
 }
 
-/* body.dark #lambo {
-    filter: brightness(200%);
-} */
-
 #lambo {
     margin: -600px 425px 0px 0px;
     width: 1200px;
     z-index: -5;
     position: relative;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 #pika-img {

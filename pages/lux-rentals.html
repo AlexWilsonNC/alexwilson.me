@@ -17,53 +17,75 @@
 </head>
 
 <body>
-    <nav id="nav">
-        <div id="nav-left">
-            <a href="../index.html">
-                <p><span>A</span>W</p>
+    <main>
+        <div id="progressbar"></div>
+
+        <nav id="nav">
+            <div id="nav-left">
+                <a href="../index.html">
+                    <p><span>A</span>W</p>
+                </a>
+            </div>
+            <div id="nav-right">
+                <a id="inactive" href="../index.html">Home</a>
+                <a id="active" href="../index.html#my-work">Projects</a>
+                <a id="inactive" href="../index.html#resume-section">Resume</a>
+                <a id="inactive" href="#">About Me</a>
+            </div>
+        </nav>
+
+        <div id="theme-switcher">
+            <button id="theme-btn-space">Outer Space</button>
+            <button id="theme-btn">Dark Mode</button>
+        </div>
+
+        <div id="first-slide">
+            <h1>LUXURY RENTALS</h1>
+            <a id="visit" href="https://luxury-rentals-10-4-2021.herokuapp.com/" target="_">
+                <h2>Visit the Site</h2>
             </a>
-        </div>
-        <div id="nav-right">
-            <a id="inactive" href="../index.html">Home</a>
-            <a id="active" href="../index.html#my-work">Projects</a>
-            <a id="inactive" href="../index.html#resume-section">Resume</a>
-            <a id="inactive" href="#">About Me</a>
-        </div>
-    </nav>
-
-    <div id="theme-switcher">
-        <button id="theme-btn-space">Outer Space</button>
-        <button id="theme-btn">Dark Mode</button>
-    </div>
-
-    <div id="first-slide">
-        <h1>LUXURY RENTALS</h1>
-        <a id="visit" href="https://luxury-rentals-10-4-2021.herokuapp.com/" target="_">
-            <h2>Visit the Site</h2>
-        </a>
-        <div id="first-slide-container">
-            <div id="slide-left">
-                <div class="info">
-                    <p>Luxury Rentals is a website created utilizing handlebars.js, sequelize databases, and third-party
-                    APIs.
-                    This was a group project I worked on with two other classmates of mine, with my contributions having
-                    been
-                    heavily on the design and layout of the site, as well as some front-end javascript and seeding the
-                    database.</p>
+            <div id="first-slide-container">
+                <div id="slide-left">
+                    <div class="info">
+                        <p>Luxury Rentals is a website created utilizing handlebars.js, sequelize databases, and
+                            third-party
+                            APIs.
+                            This was a group project I worked on with two other classmates of mine, with my
+                            contributions having
+                            been
+                            heavily on the design and layout of the site, as well as some front-end javascript and
+                            seeding the
+                            database.</p>
+                    </div>
+                </div>
+                <div id="slide-right">
+                    <a href="https://luxury-rentals-10-4-2021.herokuapp.com/" target="_"><img id="visit-img"
+                            src="../assets/luxury-rentals1.png" alt="car site screenshot"></a>
                 </div>
             </div>
-            <div id="slide-right">
-                <a href="https://luxury-rentals-10-4-2021.herokuapp.com/" target="_"><img id="visit-img" src="../assets/luxury-rentals1.png" alt="car site screenshot"></a>
-            </div>
+            <img id="lambo" src="../assets/lambo-etch.png" alt="lamborghini drawing">
         </div>
-        <img id="lambo" src="../assets/lambo-etch.png" alt="lamborghini drawing">
-    </div>
 
+        <a href="#" id="up-arrow"><i class="fas fa-chevron-up"></i></a>
 
-    <a href="#" id="up-arrow"><i class="fas fa-chevron-up"></i></a>
-
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="../index.js"></script>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="../index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop(),
+                    dh = $(document).height(),
+                    wh = $(window).height();
+                scrollPercent = (scroll / (dh - wh)) * 100;
+                $('#progressbar').css('height', scrollPercent + '%');
+            });
+            $('main').mousemove(function (e) {
+                const moveX = (e.pageX * -1 / 50);
+                const moveY = (e.pageY * -1 / 50);
+                $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+            })
+        </script>
+    </main>
 </body>
 
 </html>

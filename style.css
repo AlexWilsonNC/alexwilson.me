@@ -21,7 +21,7 @@
 } */
 
 body.dark {
-    background-color: black;
+    background-color: #000;
     /* transition: all ease-in-out 0.65s; */
 }
 
@@ -43,26 +43,40 @@ body.dark #testimonials {
 }
 
 body.dark #up-arrow {
-    color: black;
+    color: #000;
 }
 
 body.dark #theme-btn {
-    color: black;
+    color: #000;
     background-color: #fff;
 }
 
 body.dark #theme-btn-space {
-    color: black;
+    color: #000;
     background-color: #fff;
 }
 
 /* body.dark #first-slide p {
-    color: black;
+    color: #000;
     font-weight: 600;
 } */
 
 body.dark #profile-img {
     content: url("assets/profile-vampire.jpg");
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to top, /*#fcb045, #fd1d1d,*/#ffff58, #58f788, #355FE9, #a55ad8);
+    z-index: 1000;
 }
 
 #nav {
@@ -151,6 +165,13 @@ body.dark #profile-img {
 #theme-btn:hover,
 #theme-btn-space:hover {
     cursor: pointer;
+}
+
+#tryme {
+    width: 100px;
+    position: absolute;
+    right: 150px;
+    margin-top: 15px;
 }
 
 #first-slide {
@@ -366,7 +387,7 @@ h3 {
     margin: 15px 15px 15px 15px;
     border-radius: 15px;
     transition: ease-in-out 0.3s;
-    color: black;
+    color: #000;
 }
 
 .work-card:hover {
@@ -577,9 +598,9 @@ h6 {
     position: relative;
 }
 
-/* .gadget-svg path {
-    filter: red;
-} */
+body.dark .gadget-svg {
+    fill: #fff;
+}
 
 #resume-right {
     width: 60%;
@@ -598,7 +619,7 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -400px;
+    margin-top: -300px;
 }
 
 #small-footer {
@@ -636,7 +657,7 @@ h6 {
 #big-footer {
     width: 100%;
     background-image: var(--blue-pink);
-    height: 300px;
+    height: 275px;
     position: relative;
     margin-top: -50px;
     z-index: 50;
@@ -656,15 +677,21 @@ h6 {
 }
 
 #linkedin-white {
-    width: 240px;
+    width: 230px;
     margin: 0px 100px;
 }
 
 #big-footer p {
-    font-size: 52px;
+    font-size: 48px;
     font-weight: 600;
     color: #fff;
 }
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
 
 @media screen and (max-width: 1400px) {
     #first-slide p {

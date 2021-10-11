@@ -1,17 +1,13 @@
 body.space {
-    background: url(../assets/space.jpeg) no-repeat center center fixed;
+    background-color: #000;
+}
+
+body.space main {
+    background: url(../assets/space2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Poppins', sans-serif;
-    transition: all ease-in-out 0.65s;
-}
-
-body.space #first-slide h1 {
-    background: #fff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 body.space .info p {
@@ -35,4 +31,9 @@ body.space #theme-btn {
 body.space #theme-btn-space {
     color: black;
     background-color: #fff;
+}
+
+body.space .gadget-svg {
+    fill: #fff;
+    z-index: 2;
 }
