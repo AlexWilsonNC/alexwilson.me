@@ -89,3 +89,11 @@ body.dark #theme-btn-space {
     width: 500px;
     margin: -500px 0px 0px -500px;
 }
+
+#weather-img {
+    position: relative;
+    z-index: -5;
+    opacity: 0.25;
+    width: 400px;
+    margin: -300px 600px 0px 0px;
+}
