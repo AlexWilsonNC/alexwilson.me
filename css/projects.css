@@ -97,3 +97,24 @@ body.dark #theme-btn-space {
     width: 400px;
     margin: -300px 600px 0px 0px;
 }
+
+#lash-img {
+    position: relative;
+    z-index: -5;
+    opacity: 0.35;
+    width: 400px;
+    margin: -300px 600px 0px 0px;
+}
+
+#e-comm-img {
+    width: 600px;
+    margin: 15px 0px 0px 100px;
+}
+
+#laptop-img {
+    position: relative;
+    z-index: -5;
+    opacity: 0.5;
+    width: 600px;
+    margin: -500px 650px 0px 0px;
+}
