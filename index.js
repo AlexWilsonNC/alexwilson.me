@@ -37,7 +37,7 @@ darkButton.addEventListener('click', () => {
 const enableSpaceMode = () => {
   document.body.classList.add('space');
   document.getElementById('theme-btn-space').innerText = 'Main Theme';
-  document.getElementById('tryme').style.display = 'none';
+  // document.getElementById('tryme').style.display = 'none';
   localStorage.setItem('spaceMode', 'enabled');
 };
 
