@@ -1,5 +1,5 @@
 * {
-    margin: 5px;
+    margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
@@ -855,6 +855,7 @@ body.dark .gadget-svg {
     }
     #nav-left span {
         font-size: 40px;
+        margin: 0px;
     }
     #nav-left p {
         font-size: 26px;
@@ -866,19 +867,35 @@ body.dark .gadget-svg {
         font-size: 14px;
         margin-left: 5px;
     }
+    #profile-img {
+        width: 105px;
+    }
+    #theme-switcher {
+        justify-content: space-around;
+        margin: 0px;
+    }
+    #theme-btn,
+    #theme-btn-space {
+    margin-left: 0px;
+    font-size: 14px;
+    }
+    #tryme {
+        display: none;
+    }
     .gradient-bg p {
         font-size: 16px;
         width: 400px;
         margin: 0px;
     }
     #white-tech-box {
-        width: 95%;
+        width: 96%;
+        padding-bottom: 0px;
     }
     .fa-globe,
     .fa-network-wired,
     .fa-laptop-code {
-    font-size: 43px;
-    margin-top: 20px;
+        font-size: 43px;
+        margin-top: 20px;
     }
     #white-tech-box h2 {
         font-size: 18px;
@@ -886,7 +903,7 @@ body.dark .gadget-svg {
     #left,
     #center,
     #right {
-        width: 31%;
+        width: 33%;
     }
     #white-tech-box p {
         display: none;
@@ -897,5 +914,78 @@ body.dark .gadget-svg {
     }
     #white-tech-box li {
         font-size: 14px;
+    }
+    h3,
+    h6 {
+        font-size: 24px;
+    }
+    #container-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #container-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2, 
+    .card3,
+    .card4 {
+        display: none;
+    }
+    .card6 {
+        margin-top: 25px;
+    }
+    #resume-left {
+        display: none;
+    }
+    #resume-right {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #resume-right img {
+        height: 600px;
+        margin: 0px;
+    }
+    #footer-section {
+        margin-top: 0px;
+        /*position: relative;
+        bottom: 0; */
+    }
+    #small-footer {
+        display: none;
+    }
+    #big-footer {
+        margin-top: 0px;
+        height: 120px;
+        padding: 25px;
+    }
+    #big-footer p {
+        font-size: 20px;
+    }
+    #big-footer-top {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    #github-white {
+        display: none;
+    }
+    #linkedin-white {
+        width: 100px;
+        margin: 5px 0px;
+    }
+    #big-footer-bottom {
+        margin-top: 10px;
+    }
+    #up-arrow {
+        font-size: 40px;
+    }
+    #progressbar {
+        width: 7px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 }
