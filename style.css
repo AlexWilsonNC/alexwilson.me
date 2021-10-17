@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
@@ -20,7 +20,7 @@
     position: absolute;
     top: 400px; 
     left: -300px; 
-    width: 200px;
+    width: 150px;
     transition: all ease-in-out 3.5s;
 }
 
@@ -30,7 +30,6 @@
 
 body.dark {
     background-color: #000;
-    /* transition: all ease-in-out 0.65s; */
 }
 
 body.dark #white-tech-box {
@@ -64,13 +63,12 @@ body.dark #theme-btn-space {
     background-color: #fff;
 }
 
-/* body.dark #first-slide p {
-    color: #000;
-    font-weight: 600;
-} */
-
 body.dark #profile-img {
     content: url("assets/profile-vampire.jpg");
+}
+
+body.space #profile-img {
+    content: url("assets/alien-profile.jpg");
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +82,7 @@ body.dark #profile-img {
     width: 15px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: linear-gradient(to top, /*#fcb045, #fd1d1d, #ffff58,*/ #58f788, #355FE9, #a55ad8);
+    background: linear-gradient(to top, #58f788, #355FE9, #a55ad8);
     z-index: 1000;
 }
 
@@ -204,20 +202,20 @@ body.dark #profile-img {
 .gradient-bg p {
     font-size: 30px;
     color: #fff;
-    margin: 5px 80px 5px 80px;
+    text-align: center;
 }
 
 .gradient-bg {
     background-image: var(--blue-pink);
     width: 80%;
-    height: 300px;
     border-radius: 15px;
-    text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: all ease-in-out 0.4s;
     position: relative;
     z-index: 3;
+    padding: 22px 15px;
 }
 
 .gradient-bg:hover {
@@ -232,6 +230,7 @@ body.dark #profile-img {
     -webkit-text-fill-color: transparent;
     margin: 15px 0px 25px 0px;
     z-index: 3;
+    text-align: center;
 }
 
 #up-arrow {
@@ -844,5 +843,59 @@ body.dark .gadget-svg {
     }
     #big-footer p {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #first-slide h1 {
+        font-size: 20px;
+    }
+    #nav-left {
+        margin-left: 15px;
+    }
+    #nav-left span {
+        font-size: 40px;
+    }
+    #nav-left p {
+        font-size: 26px;
+    }
+    #nav-right {
+        margin-right: 30px;
+    }
+    #nav-right a {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .gradient-bg p {
+        font-size: 16px;
+        width: 400px;
+        margin: 0px;
+    }
+    #white-tech-box {
+        width: 95%;
+    }
+    .fa-globe,
+    .fa-network-wired,
+    .fa-laptop-code {
+    font-size: 43px;
+    margin-top: 20px;
+    }
+    #white-tech-box h2 {
+        font-size: 18px;
+    }
+    #left,
+    #center,
+    #right {
+        width: 31%;
+    }
+    #white-tech-box p {
+        display: none;
+    }
+    .fa-circle, 
+    .fa-circle-notch {
+        display: none !important;
+    }
+    #white-tech-box li {
+        font-size: 14px;
     }
 }
