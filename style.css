@@ -425,20 +425,23 @@ h3 {
 }
 
 .card2 {
-    background-image: var(--pink-lightblue);
+    background-image: var(--lightblue-green);
     z-index: 10;
     position: relative;
 }
 
 .card2 img {
-    width: 350px;
-    margin-top: -25px;
+    width: 450px;
+    margin: -40px -50px 0px 0px;
     opacity: 0.75;
+    position: relative;
 }
 
 .card2 p {
     font-size: 40px;
-    margin: -300px 0px 0px 90px;
+    margin: -400px 0px 0px 40px;
+    font-weight: 600;
+    position: relative;
 }
 
 .card3 {
