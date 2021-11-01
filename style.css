@@ -354,7 +354,18 @@ hr {
 #white-tech-box li {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+#left li {
+    margin-bottom: 10px;
+}
+
+#center li {
+    margin-bottom: 12px;
+}
+
+#right li {
+    margin-bottom: 25px;
 }
 
 .bold-list {
